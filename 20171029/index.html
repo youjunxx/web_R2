@@ -48,7 +48,10 @@
         .col-5 {
             width: 20%;
         }
-        .col-2,.col-3,.col-4,.col-5 {
+        .col-6 {
+            width: calc(100%/6);
+        }
+        .col-2,.col-3,.col-4,.col-5,.col-6 {
             float: left;
             padding: 15px;
         }
@@ -250,6 +253,69 @@
             color: #000;
             font-weight: bold;
         }
+        /*************************************************************/
+        /*sponsor*/
+        #sponsor {
+            text-align: center;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            background-color: #111;
+            color: #c1c1c1;
+        }
+        /****************************************************************/
+        /*Contact*/
+        /*info*/
+        #contact {
+            padding-top: 150px;
+            padding-bottom: 150px;
+        }
+        #contact h2 {
+            margin-bottom: 30px;
+        }
+        #contact .fixed-width:nth-of-type(1){
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        #contact h3 {
+            padding: 15px;
+        }
+        #contact .info {
+            float: left;
+            width: 400px;
+            padding: 15px;
+            font-size: 13px;
+            color: #767676;
+        }
+        #contact .info-item {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        #contact .info-icon {
+            float: left;
+            width: 30px;
+        }
+        #contact .info-content {
+            float: left;
+            width: 340px;
+        }
+        #contact .info-content ul {
+            list-style: none;
+        }
+        
+        #contact .form {
+            width: 800px;
+            float: left;
+        }
+        input {
+/*            border: 0;*/
+            width: 100%;
+            padding: 15px 10px;
+        }
+        textarea {
+            width: 100%;
+            height: 200px;
+            padding: 15px 10px;
+        }
     </style>
 </head>
 <body>
@@ -439,6 +505,73 @@
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum qui tenetur quisquam doloremque architecto ratione blanditiis?
                 </p>
                 <a href="#">Read More >></a>
+            </div>
+        </div>
+    </div>
+    <div class="full-width" id="sponsor">
+        <div class="fixed-width clearfix">
+            <div class="col-6">
+                <span class="fa fa-apple fa-3x"></span>
+            </div>
+            <div class="col-6">
+                <span class="fa fa-amazon fa-3x"></span>
+            </div>
+            <div class="col-6">
+                <span class="fa fa-html5 fa-3x"></span>
+            </div>
+            <div class="col-6">
+                <span class="fa fa-css3 fa-3x"></span>
+            </div>
+            <div class="col-6">
+                <span class="fa fa-slack fa-3x"></span>
+            </div>
+            <div class="col-6">
+                <span class="fa fa-maxcdn fa-3x"></span>
+            </div>
+        </div>
+    </div>
+    <div class="full-width" id="contact">
+        <div class="fixed-width">
+            <h2>Contact</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt sit quod vel.</p>
+        </div>
+        <div class="fixed-width clearfix">
+            <h3>INFORMATION</h3>
+            <div class="info">
+                <div class="info-item clearfix">
+                    <div class="info-icon"><span class="fa fa-home"></span></div>
+                    <div class="info-content">
+                        <ul>
+                            <li>California</li>
+                            <li>Afela inc</li>
+                            <li>48792</li>
+                            <li>Star apple st.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="info-item clearfix">
+                    <div class="info-icon"><span class="fa fa-mobile"></span></div>
+                    <div class="info-content">
+                        (800)123-456-789
+                    </div>
+                </div>
+                <div class="info-item clearfix">
+                    <div class="info-icon"><span class="fa fa-envelope"></span></div>
+                    <div class="info-content">
+                        qwerty@gmail.com
+                    </div>
+                </div>
+            </div>
+            <div class="form">
+                <div class="col-2">
+                    <input type="text" placeholder="Name">
+                </div>
+                <div class="col-2">
+                    <input type="text" placeholder="Mail">
+                </div>
+                <div class="col-1">
+                    <textarea name="" id="" placeholder="Message"></textarea>
+                </div>
             </div>
         </div>
     </div>
